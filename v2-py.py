@@ -6,11 +6,7 @@ mycon = connector.connect(
     user='root',
     passwd='password', 
     auth_plugin='mysql_native_password'
-)
-
-
-
-    
+)    
 # FUNCTIONS
 
 def setup():       #this creates the table containing the data us all the users
@@ -86,23 +82,11 @@ def login():
         print('Please recheck your username and password')#else act only when name is correct but password is wrong
         login()  #runs the function again
 
-        
-        
-
-
-
-
-
-
-
 
 # PROGRAM
 cur=mycon.cursor()
-
 setup()
-authn()
-    
-    
+authn()  
         
 #signup()
 #name=input("Enter your name:")
